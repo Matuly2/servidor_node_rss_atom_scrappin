@@ -83,3 +83,145 @@ p {
     color: #555;
     font-size: 1em;
 }
+
+#rss-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+  }
+  
+  .rss-item {
+    box-sizing: border-box;
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .rss-item:hover {
+    transform: scale(1.03);
+  }
+  
+  .rss-item img {
+    width: 100%;
+    height: auto;
+    max-height: 200px;
+    object-fit: cover;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .rss-item h3 {
+    margin: 10px;
+    font-size: 1.5em;
+    color: #333;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .rss-item p {
+    margin: 10px;
+    color: #666;
+    font-size: 1.2em;
+  }
+  
+  .rss-item a {
+    display: block;
+    margin: 10px;
+    padding: 8px 16px;
+    background-color: #007BFF;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+  }
+  
+  .rss-item a:hover {
+    background-color: #0056b3;
+  }
+
+  #atom-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+  }
+  
+  .atom-entry {
+    box-sizing: border-box;
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .atom-entry:hover {
+    transform: scale(1.03);
+  }
+  
+  .atom-entry img {
+    width: 100%;
+    height: auto;
+    max-height: 200px;
+    object-fit: cover;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .atom-entry h3 {
+    margin: 10px;
+    font-size: 1.5em;
+    color: #333;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .atom-entry a {
+    display: block;
+    margin: 10px;
+    padding: 8px 16px;
+    background-color: #007BFF;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+  }
+  
+  .atom-entry a:hover {
+    background-color: #0056b3;
+  }
+
+  #contenedor-horario {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+.horario {
+    margin: 20px;
+    flex: 1;
+}
+
+.horario h2 {
+    font-size: 1.5em;
+    color: #333;
+}
+
+.horario ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.horario li {
+    margin-bottom: 10px;
+}
+
+
+iframe {
+    margin: 20px;
+    flex: 1;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+

@@ -13,7 +13,21 @@ app.get('/',(req,res)=>{//devuelve el index
     res.setHeader('Content-type','text/html');
     res.send(contenido);
 });
-
+app.get('/paginarss',(req,res)=>{//devuelve el index
+    var contenido=fs.readFileSync('public/rss.html');
+    res.setHeader('Content-type','text/html');
+    res.send(contenido);
+});
+app.get('/paginaatom',(req,res)=>{//devuelve el index
+    var contenido=fs.readFileSync('public/atom.html');
+    res.setHeader('Content-type','text/html');
+    res.send(contenido);
+});
+app.get('/mapa',(req,res)=>{//devuelve el index
+    var contenido=fs.readFileSync('public/mapa.html');
+    res.setHeader('Content-type','text/html');
+    res.send(contenido);
+});
 app.get('/json',(req,res)=>{
     fs.readFile('archivo.json','utf8',(err,data)=>{
         if(err){
